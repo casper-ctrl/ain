@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff0000;
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar .nav-links li {
+            margin-left: 20px;
+        }
+
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #ff0000;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+        }
+
+        .left-section {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .left-section h1 {
+            color: #d86464;
+            font-size: 48px;
+        }
+
+        .left-section p {
+            color: #4b4b4b;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .buttons {
+            margin-top: 70px;
+    
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 16px;
+            margin-right: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .buttons .download {
+            background: linear-gradient(to right, #ff7e00, #ff0000);
+            color: #fff;
+        }
+
+        .buttons .business {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .buttons .choose-plan {
+            background-color: #8e8e8e;
+            color: #fff;
+        }
+
+        .buttons .download:hover,
+        .buttons .business:hover,
+        .buttons .choose-plan:hover {
+            opacity: 0.8;
+        }
+
+        .right-section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            flex: 1;
+        }
+
+        .right-section img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .home {
+            padding: 8rem 7% 1.4rem;
+          }
+          
+          .home h2 {
+            text-align: center;
+            font-size: 2.6rem;
+            margin-bottom: 3rem;
+            color: #d86464
+          }
+          
+          .row {
+            padding: 40px;
+        }
+
+        .section {
+            display:flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .section img {
+            width: 350px;
+            border-radius: 10px;
+            margin-left: 200px;
+            margin-top: 50px;
+        }
+
+        .text-content {
+            width: 50%;
+            margin-left: 100px;
+            margin-bottom: 15rem;
+            margin-top: 10rem;
+        }
+
+        .text-content h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #d86464;
+            
+        }
+
+        .text-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #4b4b4b;
+            text-align: left ;
+        }
+
+        .gambar img{
+            margin-left: 80px;
+            width: 350px;
+        }
+
+      .row .section img{
+        margin-right: 20px;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">A</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="plan.html">Upload A Plan</a></li>
+            <li><a href="design.html">Design</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="social-links">
+            <a href="#"><img src="tiktok.jpg" alt="TikTok" style="width: 24px;"></a>
+            <a href="#"><img src="instagram.jpg" alt="Instagram" style="width: 24px;"></a>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="left-section">
+            <h1>ROOM PLANNER</h1>
+            <p>Inspire, Plan, Design, Visualize</p>
+            <p>Interior application design focuses on creating intuitive and aesthetically pleasing interfaces for users. Emphasizing ergonomics, enjoyable user experiences, and efficient digital space utilization, this design integrates visual design principles with user-friendly functionality. Attention to details such as UI element placement, color selection, and intuitive navigation aims to enhance user comfort while maintaining cohesive thematic continuity.</p>
+            <div class="buttons">
+                <a href="#" class="download">DOWNLOAD</a>
+                <a href="#" class="business">FOR BUSINESS</a>
+                <a href="#" class="choose-plan">CHOOSE PLAN</a>
+            </div>
+        </div>
+        <div class="right-section">
+            <img src="hero.jpg" alt="Design Image 1">
+            <img src="ruangan1.jpg" alt="Design Image 2">
+            <img src="ruangan2.jpg" alt="Design Image 3">
+            <img src="ruangan3.jpg" alt="Design Image 4">
+            <img src="ruangan4.jpg" alt="Design Image 5">
+            <img src="ruangan6.jpg" alt="Design Image 6">
+        </div>
+    </div>
+    <div class="row">
+        <div class="section">
+            <div class="text-content">
+                <h3>Design With AI</h3>
+                <p> In the rapidly evolving world of interior design, artificial intelligence (AI) is revolutionizing the way we conceptualize and create spaces. AI-powered tools are enabling designers to visualize their ideas with unprecedented precision, transforming abstract concepts into tangible, realistic renderings. By analyzing vast amounts of data, these intelligent systems can suggest optimal layouts, color schemes, and furniture arrangements that cater to individual preferences and lifestyle needs. This fusion of technology and creativity not only accelerates the design process but also ensures a level of personalization and efficiency that was previously unattainable. As AI continues to advance, it promises to unlock new possibilities in design, making it more accessible, innovative, and tailored to the unique vision of every client.</p>
+            </div>
+            <img src="ruangan4.jpg" alt="Design Image 1">
+        </div>  
+    </div>
+    <div class="section">
+        <img src="ruangan4.jpg" alt="Design Image 2">
+        <div class="text-content">
+            <h3>Design With Your Idea</h3>
+            <p>You can design with your ideas by harnessing creativity and practicality in equal measure. Whether it's conceptualizing a new layout, selecting complementary color schemes, or integrating personalized touches, the process of design unfolds as a dynamic expression of your unique vision. Embrace experimentation, refine details, and align aesthetics with functionality to create spaces that resonate with your personal style and purpose.</p>
+        </div>
+    </div>
+</body>
+</html>

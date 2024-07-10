@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Planner</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <header>
+        <div class="logo2">A</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="plan.html">Upload A Plan</a>
+            <a href="design.html">Design</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="social-icons">
+            <a href="#"><img src="tiktok.jpg" alt="TikTok" style="width: 24px;"></a>
+            <a href="#"><img src="instagram.jpg" alt="Instagram" style="width: 24px;"></a>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="upload-photo">
+                <input type="file" id="photo-upload" accept="image/*">
+                <label for="photo-upload" class="upload-box">
+                    <span class="plus">+</span>
+                    <p>Upload Photo</p>
+                </label>
+                <img id="photo-preview" src="#" alt="Photo Preview" style="display: none;">
+            </div>
+            <div class="description">
+                <textarea id="description-textarea" placeholder="Description..."></textarea>
+            </div>
+        </div>
+        <button class="submit-btn" onclick="submitDescription()">Kirim</button>
+        <p id="submitted-text" style="display: none; color: green; margin-top: 10px;">Terkirim</p>
+
+    </main>
+    <script>
+        const photoUpload = document.getElementById('photo-upload');
+        const photoPreview = document.getElementById('photo-preview');
+        const submittedText = document.getElementById('submitted-text');
+        const descriptionTextarea = document.getElementById('description-textarea');
+
+        photoUpload.addEventListener('change', function() {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    photoPreview.src = e.target.result;
+                    photoPreview.style.display = 'block';
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+
+        function submitDescription() {
+            // You can add more functionality here to handle the description data submission
+            submittedText.style.display = 'block';
+            setTimeout(() => {
+                submittedText.style.display = 'none';
+                descriptionTextarea.value = '';
+                photoPreview.style.display = 'none';
+                photoUpload.value = '';  // Clear the file input
+            }, 2000); // Clear the message after 2 seconds
+        }
+    </script>
+</body>
+</html>
